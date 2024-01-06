@@ -1,0 +1,12 @@
+html{
+    font-family: 'Roboto', sans-serif;
+    /* Font-weights:
+       -Light: 300
+       -Regular: 400
+       -Bold: 700 */
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0; 
+}

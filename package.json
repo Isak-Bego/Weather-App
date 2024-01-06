@@ -1,7 +1,7 @@
 {
-  "name": "project_name",
+  "name": "weather_app",
   "version": "1.0.0",
-  "description": "Project_description",
+  "description": "weather app using weather_api",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
