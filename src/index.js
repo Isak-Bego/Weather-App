@@ -63,6 +63,9 @@ async function retrieveForecastInfo(value) {
       })
       .then((result) => {
         resolve(result);
+      })
+      .catch((error) => {
+        reject(error);
       });
   });
 }
@@ -130,16 +133,6 @@ function setDailyData(forecastData) {
   forecastInfo.setForecast(forecast);
 }
 
-getUserLocation().then((result) => {
-  retrieveForecastInfo(result).then((data) => {
-    console.log(data);
-    setLocationData(data.location);
-    setCurrentData(data.current, data.forecast);
-    setDailyData(data.forecast);
-    displayInfo(forecastInfo);
-  });
-});
-
 function displayInfo(forecastInfo) {
   console.log(
     forecastInfo.location,
@@ -147,3 +140,29 @@ function displayInfo(forecastInfo) {
     forecastInfo.forecast
   );
 }
+
+function initializeForecastInfo(location) {
+  retrieveForecastInfo(location)
+    .then((data) => {
+      if (!data.error) {
+        setLocationData(data.location);
+        setCurrentData(data.current, data.forecast);
+        setDailyData(data.forecast);
+        displayInfo(forecastInfo);
+      } else {
+        console.log(data.error.message);
+      }
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+}
+
+window.onload = () => {
+  getUserLocation().then((result) => {
+    initializeForecastInfo(result); 
+  });
+}
+
+let city = "Berlin";
+initializeForecastInfo(city); 

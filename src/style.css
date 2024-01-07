@@ -1,3 +1,13 @@
+:root{
+    /* color palette */
+    --federal-blue: #031A6B; 
+    --prussian-blue: #033860; 
+    --cerulean: #087CA7; 
+    --polynesian-blue: #004385; 
+    --aero: #05B2DC; 
+    --white: #FFFFFF; 
+}
+
 html{
     font-family: 'Roboto', sans-serif;
     /* Font-weights:
@@ -9,4 +19,41 @@ html{
 *{
     box-sizing: border-box;
     margin: 0; 
+}
+
+header{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em; 
+    background-color: var(--white);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+}
+
+.searchContainer{
+    
+}
+
+.searchBox, .searchButton{
+    padding: 0.5em;
+    margin: 0; 
+    border-style: none; 
+}
+
+.searchBox{
+    border: solid 1px var(--cerulean);
+}
+
+.searchButton{
+    background-color: var(--prussian-blue);
+    color: white; 
+    cursor: pointer;
+}
+
+.logoContainer{
+    width: 8em; 
+}
+
+.logoContainer img{
+    width: 100%; 
 }
