@@ -56,7 +56,7 @@ async function getUserLocation() {
 async function retrieveForecastInfo(value) {
   return new Promise((resolve, reject) => {
     fetch(
-      `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${value}&days=14`,
+      `https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${value}&days=14`,
       { mode: "cors" }
     )
       .then((result) => {
