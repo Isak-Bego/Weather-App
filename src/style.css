@@ -59,7 +59,7 @@ header{
 }
 
 .currentWeatherSection{
-    padding: 2em; 
+    padding: 3em; 
     display: flex; 
     justify-content: space-around;
     flex-wrap: wrap;
@@ -143,6 +143,32 @@ header{
 }
 
 .currentWeatherDetails div img{
-    width: 1.5em;
+    width: 1.4em;
     margin-right: 0.5em;  
+}
+
+.hourlyWeatherSection{
+    display: flex; 
+    overflow-y: hidden;
+    color: white; 
+    background-color: var(--cerulean);
+    margin-top: 2em; 
+}
+
+.hourWeatherHolder{
+    display: flex; 
+    flex-direction: column;
+    margin: 2em; 
+    align-items: center;
+    padding: 2em; 
+    border-radius: 1em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.timeConditionImageHolder{
+    width: 8em; 
+}
+
+.timeConditionImageHolder img{
+    width: 100%; 
 }

@@ -5,12 +5,13 @@ import rainy from "./assets/rainy.png";
 import snowy from "./assets/snowy.png";
 import sunny from "./assets/sunny.png";
 import thunderstorm from "./assets/thunderstorm.png";
-import sunset from "./assets/sunset.png"; 
+import sunset from "./assets/sunset.png";
 import sunrise from "./assets/sunrise.png";
-import uv from "./assets/UV.png"; 
+import uv from "./assets/UV.png";
 import wind from "./assets/wind-vane.png";
-import humidity from "./assets/humidity.png"; 
+import humidity from "./assets/humidity.png";
 import precipitation from "./assets/precipitation.png";
+import pressure from "./assets/pressure.jpg";
 
 export function renderComponents(forecastInfo) {
   renderCurrentData(forecastInfo);
@@ -89,6 +90,7 @@ export function renderCurrentData(forecastInfo) {
           <p>Precipitation: ${forecastInfo.current.precip_mm} mm</p>
         </div>
         <div>
+          <img src="${pressure}" alt="Pressure">
           <p>Pressure: ${forecastInfo.current.pressure_mb} mb</p>
         </div>
         <div>
@@ -112,7 +114,22 @@ export function renderCurrentData(forecastInfo) {
 }
 
 export function renderHourlyData(forecastInfo) {
-  
+  let hourlyWeatherSection = document.createElement("div");
+  hourlyWeatherSection.className = "hourlyWeatherSection";
+  document.body.appendChild(hourlyWeatherSection);
+  forecastInfo.current.hourly.forEach((element) => {
+    let conSrc = getConditionImage(element.condition_code);
+    hourlyWeatherSection.innerHTML += `<div class="hourWeatherHolder">
+      <h3>${element.time}</h3>
+      <div class="timeConditionImageHolder">
+        <img src="${conSrc}" alt="${element.condition}">
+      </div>
+      <h1>${element.temp_c}&deg;C</h1>
+    </div>
+    `;
+  });
 }
 
-export function renderDailyData(forecastInfo) {}
+export function renderDailyData(forecastInfo) {
+  
+}

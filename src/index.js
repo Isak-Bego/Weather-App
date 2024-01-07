@@ -100,7 +100,7 @@ function setCurrentData(currentData, forecastData) {
     hourInfo.precip_mm = element.precip_mm;
     hourInfo.condition = element.condition.text;
     hourInfo.condition_code = element.condition.code;
-    hourInfo.temp_c = element.temp_c;
+    hourInfo.temp_c = Math.round(element.temp_c);
     current.hourly.push(hourInfo);
     hourInfo = [];
   });
@@ -166,5 +166,5 @@ window.onload = () => {
   });
 }
 
-// let city = "Dubai";
+// let city = "boston";
 // initializeForecastInfo(city); 
