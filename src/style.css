@@ -1,174 +1,252 @@
-:root{
-    /* color palette */
-    --federal-blue: #031A6B; 
-    --prussian-blue: #033860; 
-    --cerulean: #087CA7; 
-    --polynesian-blue: #004385; 
-    --aero: #05B2DC; 
-    --white: #FFFFFF; 
+:root {
+  /* color palette */
+  --federal-blue: #031a6b;
+  --prussian-blue: #033860;
+  --cerulean: #087ca7;
+  --polynesian-blue: #004385;
+  --aero: #05b2dc;
+  --white: #ffffff;
 }
 
-html{
-    font-family: 'Roboto', sans-serif;
-    /* Font-weights:
+html {
+  font-family: "Roboto", sans-serif;
+  /* Font-weights:
        -Light: 300
        -Regular: 400
        -Bold: 700 */
 }
 
-*{
-    box-sizing: border-box;
-    margin: 0; 
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
 
-header{
-    display: flex; 
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em; 
-    background-color: var(--white);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background-color: var(--white);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.searchContainer{
-    
+.searchBox,
+.searchButton {
+  padding: 0.5em;
+  margin: 0;
+  border-style: none;
 }
 
-.searchBox, .searchButton{
-    padding: 0.5em;
-    margin: 0; 
-    border-style: none; 
+.searchBox {
+  border: solid 1px var(--cerulean);
 }
 
-.searchBox{
-    border: solid 1px var(--cerulean);
+.searchButton {
+  background-color: var(--prussian-blue);
+  color: white;
+  cursor: pointer;
 }
 
-.searchButton{
-    background-color: var(--prussian-blue);
-    color: white; 
-    cursor: pointer;
+.logoContainer {
+  width: 8em;
 }
 
-.logoContainer{
-    width: 8em; 
+.logoContainer img {
+  width: 100%;
 }
 
-.logoContainer img{
-    width: 100%; 
+.currentWeatherSection {
+  padding: 3em;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 75%;
+  margin: auto;
 }
 
-.currentWeatherSection{
-    padding: 3em; 
-    display: flex; 
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 75%; 
-    margin: auto; 
+.currentWeatherTicket {
+  padding: 2em;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 2em;
 }
 
-.currentWeatherTicket{
-    padding: 2em; 
-    background-color: white; 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 2em;
+.currentWeatherTicket h3 {
+  font-size: 2.5em;
 }
 
-.currentWeatherTicket h3{
-    font-size: 2.5em; 
+.currentWeatherTicket h6 {
+  font-size: 1em;
+  font-weight: 300;
 }
 
-.currentWeatherTicket h6{
-    font-size: 1em;
-    font-weight: 300; 
+.currentWeatherTicket h1 {
+  font-size: 3em;
+  color: var(--prussian-blue);
+  font-weight: 700;
 }
 
-.currentWeatherTicket h1{
-    font-size: 3em;
-    color: var(--prussian-blue);
-    font-weight: 700; 
+.currentWeatherDetails {
+  color: var(--prussian-blue);
 }
 
-.currentWeatherDetails{
-    
-    color: var(--prussian-blue); 
+.conditionImageContainer {
+  width: 18em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.conditionImageContainer{
-    width: 18em; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.conditionImageContainer img {
+  width: 60%;
 }
 
-.conditionImageContainer img{
-    width: 60%; 
+.maxMin {
+  display: flex;
+  justify-content: flex-start;
 }
 
-.maxMin{
-    display: flex; 
-    justify-content: flex-start;
+.max,
+.min {
+  color: white;
+  padding: 0.5em;
+  border-radius: 0.5em;
 }
 
-.max, .min{
-    color: white;
-    padding: 0.5em; 
-    border-radius: 0.5em;
+.max {
+  background-color: var(--prussian-blue);
+  margin-left: 1em;
 }
 
-.max{
-    background-color: var(--prussian-blue);
-    margin-left: 1em; 
+.min {
+  background-color: var(--cerulean);
 }
 
-.min{
-    background-color: var(--cerulean);
+.currentWeatherDetails {
+  min-width: 20em;
+  max-width: 30em;
+  width: 30%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  height: fit-content;
 }
 
-.currentWeatherDetails{
-    min-width: 20em;
-    max-width: 30em; 
-    width: 30%; 
-    padding-top: 1em;
-    padding-bottom: 1em;  
-    height: fit-content; 
+.currentWeatherDetails div {
+  padding: 1em;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0.3em;
+  display: flex;
+  align-items: center;
 }
 
-.currentWeatherDetails div{
-    padding: 1em; 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 0.3em;
-    display: flex; 
-    align-items: center;
+.currentWeatherDetails div img {
+  width: 1.4em;
+  margin-right: 0.5em;
 }
 
-.currentWeatherDetails div img{
-    width: 1.4em;
-    margin-right: 0.5em;  
+.hourlyWeatherSection {
+  display: flex;
+  overflow-y: hidden;
+  color: white;
+  background-color: var(--cerulean);
+  margin-top: 2em;
 }
 
-.hourlyWeatherSection{
-    display: flex; 
-    overflow-y: hidden;
-    color: white; 
-    background-color: var(--cerulean);
-    margin-top: 2em; 
+.hourWeatherHolder {
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+  align-items: center;
+  padding: 2em;
+  border-radius: 1em;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.hourWeatherHolder{
-    display: flex; 
-    flex-direction: column;
-    margin: 2em; 
-    align-items: center;
-    padding: 2em; 
-    border-radius: 1em;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.timeConditionImageHolder {
+  width: 8em;
 }
 
-.timeConditionImageHolder{
-    width: 8em; 
+.timeConditionImageHolder img {
+  width: 100%;
 }
 
-.timeConditionImageHolder img{
-    width: 100%; 
+.dailyWeatherSection {
+  margin-top: 3.5em;
+  margin-bottom: 2.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dayWeatherHolder {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.dayConditionImageHolder {
+  width: 4em;
+}
+
+.dayConditionImageHolder img {
+  width: 100%;
+}
+
+.detailHolder {
+  display: flex;
+  flex-direction: column;
+  width: 3em;
+  align-items: center;
+}
+
+.detailHolder img {
+  width: 2em;
+  margin-bottom: 0.5em;
+}
+
+.dayName {
+  width: 6.5em;
+}
+
+.minMax2 {
+  flex-direction: column;
+  align-items: center;
+}
+
+.minMax2 .min,
+.minMax2 .max {
+  border-radius: 0;
+  padding: 0.2em;
+  width: 4em;
+  text-align: center;
+  margin: 0;
+}
+
+.minMax2 .min {
+  margin-bottom: 0.5em;
+}
+
+.loadingScreen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadingScreen img {
+  width: 10%;
+  object-fit: contain;
+  aspect-ratio: 1/1;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
 }

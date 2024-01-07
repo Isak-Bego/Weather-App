@@ -60,9 +60,18 @@ function getConditionImage(conditionCode) {
   }
 }
 
+export function deleteComponents() {
+  let master = document.querySelector(".master");
+  while (master.firstChild) {
+    master.removeChild(master.firstChild);
+  }
+}
+
 export function renderCurrentData(forecastInfo) {
   let conSrc = getConditionImage(forecastInfo.current.condition_code);
-  document.body.innerHTML += `<div class="currentWeatherSection">
+  document.querySelector(
+    ".master"
+  ).innerHTML += `<div class="currentWeatherSection">
     <div class="currentWeatherTicket">
         <h3>${forecastInfo.location.name}</h3>
         <h6>${forecastInfo.current.condition}</h6>
@@ -116,7 +125,7 @@ export function renderCurrentData(forecastInfo) {
 export function renderHourlyData(forecastInfo) {
   let hourlyWeatherSection = document.createElement("div");
   hourlyWeatherSection.className = "hourlyWeatherSection";
-  document.body.appendChild(hourlyWeatherSection);
+  document.querySelector(".master").appendChild(hourlyWeatherSection);
   forecastInfo.current.hourly.forEach((element) => {
     let conSrc = getConditionImage(element.condition_code);
     hourlyWeatherSection.innerHTML += `<div class="hourWeatherHolder">
@@ -131,5 +140,28 @@ export function renderHourlyData(forecastInfo) {
 }
 
 export function renderDailyData(forecastInfo) {
-  
+  let dailyWeatherSection = document.createElement("div");
+  dailyWeatherSection.className = "dailyWeatherSection";
+  document.querySelector(".master").appendChild(dailyWeatherSection);
+  forecastInfo.forecast.forEach((element) => {
+    let conSrc = getConditionImage(element.condition_code);
+    dailyWeatherSection.innerHTML += `<div class="dayWeatherHolder">
+      <div class="dayName"><h3>${element.day}</h3></div>
+      <div class="dayConditionImageHolder">
+        <img src="${conSrc}" alt="${element.condition}">
+      </div>
+      <div class="detailHolder">
+        <img src="${humidity}" alt="Humidity">
+        <h6>${element.avghumidity}%</h6>
+      </div>
+      <div class="detailHolder">
+        <img src="${precipitation}" alt="Precipitation">
+        <h6>${element.totalprecip_mm}mm</h6>
+      </div>
+      <div class="minMax minMax2">
+        <div class="min">L: ${element.mintemp_c}&deg;C</div>
+        <div class="max">H: ${element.maxtemp_c}&deg;C</div>
+      </div>
+    </div>`;
+  });
 }

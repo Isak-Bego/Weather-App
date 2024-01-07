@@ -1,6 +1,6 @@
 import "./style.css";
 import { getDay } from "date-fns";
-import { renderComponents } from "./renderComponents";
+import { deleteComponents, renderComponents } from "./renderComponents";
 
 //you can get it, it's for free
 const API_KEY = "0cf899136a814fb3a74213616240401";
@@ -135,12 +135,8 @@ function setDailyData(forecastData) {
 }
 
 function displayInfo(forecastInfo) {
-  console.log(
-    forecastInfo.location,
-    forecastInfo.current,
-    forecastInfo.forecast
-  );
-  renderComponents(forecastInfo)
+  deleteComponents();
+  renderComponents(forecastInfo);
 }
 
 function initializeForecastInfo(location) {
@@ -162,9 +158,14 @@ function initializeForecastInfo(location) {
 
 window.onload = () => {
   getUserLocation().then((result) => {
-    initializeForecastInfo(result); 
+    initializeForecastInfo(result);
   });
-}
+};
 
-// let city = "boston";
-// initializeForecastInfo(city); 
+let searchButton = document.querySelector(".searchButton");
+let searchBox = document.querySelector(".searchBox");
+searchButton.addEventListener("click", () => {
+  let location = searchBox.value;
+  searchBox.value = "";
+  initializeForecastInfo(location);
+});
