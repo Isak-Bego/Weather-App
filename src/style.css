@@ -27,7 +27,7 @@ header{
     align-items: center;
     padding: 1em; 
     background-color: var(--white);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .searchContainer{
@@ -56,4 +56,93 @@ header{
 
 .logoContainer img{
     width: 100%; 
+}
+
+.currentWeatherSection{
+    padding: 2em; 
+    display: flex; 
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 75%; 
+    margin: auto; 
+}
+
+.currentWeatherTicket{
+    padding: 2em; 
+    background-color: white; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 2em;
+}
+
+.currentWeatherTicket h3{
+    font-size: 2.5em; 
+}
+
+.currentWeatherTicket h6{
+    font-size: 1em;
+    font-weight: 300; 
+}
+
+.currentWeatherTicket h1{
+    font-size: 3em;
+    color: var(--prussian-blue);
+    font-weight: 700; 
+}
+
+.currentWeatherDetails{
+    
+    color: var(--prussian-blue); 
+}
+
+.conditionImageContainer{
+    width: 18em; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conditionImageContainer img{
+    width: 60%; 
+}
+
+.maxMin{
+    display: flex; 
+    justify-content: flex-start;
+}
+
+.max, .min{
+    color: white;
+    padding: 0.5em; 
+    border-radius: 0.5em;
+}
+
+.max{
+    background-color: var(--prussian-blue);
+    margin-left: 1em; 
+}
+
+.min{
+    background-color: var(--cerulean);
+}
+
+.currentWeatherDetails{
+    min-width: 20em;
+    max-width: 30em; 
+    width: 30%; 
+    padding-top: 1em;
+    padding-bottom: 1em;  
+    height: fit-content; 
+}
+
+.currentWeatherDetails div{
+    padding: 1em; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0.3em;
+    display: flex; 
+    align-items: center;
+}
+
+.currentWeatherDetails div img{
+    width: 1.5em;
+    margin-right: 0.5em;  
 }

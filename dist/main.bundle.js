@@ -16,7 +16,7 @@
   \*************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, `:root{\n    /* color palette */\n    --federal-blue: #031A6B; \n    --prussian-blue: #033860; \n    --cerulean: #087CA7; \n    --polynesian-blue: #004385; \n    --aero: #05B2DC; \n    --white: #FFFFFF; \n}\n\nhtml{\n    font-family: 'Roboto', sans-serif;\n    /* Font-weights:\n       -Light: 300\n       -Regular: 400\n       -Bold: 700 */\n}\n\n*{\n    box-sizing: border-box;\n    margin: 0; \n}\n\nheader{\n    display: flex; \n    justify-content: space-between;\n    align-items: center;\n    padding: 1em; \n    background-color: var(--white);\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)\n}\n\n.searchContainer{\n    \n}\n\n.searchBox, .searchButton{\n    padding: 0.5em;\n    margin: 0; \n    border-style: none; \n}\n\n.searchBox{\n    border: solid 1px var(--cerulean);\n}\n\n.searchButton{\n    background-color: var(--prussian-blue);\n    color: white; \n    cursor: pointer;\n}\n\n.logoContainer{\n    width: 8em; \n}\n\n.logoContainer img{\n    width: 100%; \n}`, \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://weather_app/./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, `:root{\n    /* color palette */\n    --federal-blue: #031A6B; \n    --prussian-blue: #033860; \n    --cerulean: #087CA7; \n    --polynesian-blue: #004385; \n    --aero: #05B2DC; \n    --white: #FFFFFF; \n}\n\nhtml{\n    font-family: 'Roboto', sans-serif;\n    /* Font-weights:\n       -Light: 300\n       -Regular: 400\n       -Bold: 700 */\n}\n\n*{\n    box-sizing: border-box;\n    margin: 0; \n}\n\nheader{\n    display: flex; \n    justify-content: space-between;\n    align-items: center;\n    padding: 1em; \n    background-color: var(--white);\n    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n}\n\n.searchContainer{\n    \n}\n\n.searchBox, .searchButton{\n    padding: 0.5em;\n    margin: 0; \n    border-style: none; \n}\n\n.searchBox{\n    border: solid 1px var(--cerulean);\n}\n\n.searchButton{\n    background-color: var(--prussian-blue);\n    color: white; \n    cursor: pointer;\n}\n\n.logoContainer{\n    width: 8em; \n}\n\n.logoContainer img{\n    width: 100%; \n}\n\n.currentWeatherSection{\n    padding: 2em; \n    display: flex; \n    justify-content: space-around;\n    flex-wrap: wrap;\n    width: 75%; \n    margin: auto; \n}\n\n.currentWeatherTicket{\n    padding: 2em; \n    background-color: white; \n    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);\n    border-radius: 2em;\n}\n\n.currentWeatherTicket h3{\n    font-size: 2.5em; \n}\n\n.currentWeatherTicket h6{\n    font-size: 1em;\n    font-weight: 300; \n}\n\n.currentWeatherTicket h1{\n    font-size: 3em;\n    color: var(--prussian-blue);\n    font-weight: 700; \n}\n\n.currentWeatherDetails{\n    \n    color: var(--prussian-blue); \n}\n\n.conditionImageContainer{\n    width: 18em; \n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\n.conditionImageContainer img{\n    width: 60%; \n}\n\n.maxMin{\n    display: flex; \n    justify-content: flex-start;\n}\n\n.max, .min{\n    color: white;\n    padding: 0.5em; \n    border-radius: 0.5em;\n}\n\n.max{\n    background-color: var(--prussian-blue);\n    margin-left: 1em; \n}\n\n.min{\n    background-color: var(--cerulean);\n}\n\n.currentWeatherDetails{\n    min-width: 20em;\n    max-width: 30em; \n    width: 30%; \n    padding-top: 1em;\n    padding-bottom: 1em;  \n    height: fit-content; \n}\n\n.currentWeatherDetails div{\n    padding: 1em; \n    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);\n    margin-bottom: 0.3em;\n    display: flex; \n    align-items: center;\n}\n\n.currentWeatherDetails div img{\n    width: 1.5em;\n    margin-right: 0.5em;  \n}\n`, \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://weather_app/./src/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -116,7 +116,147 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var date_fns__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! date-fns */ \"./node_modules/date-fns/getDay.mjs\");\n\n\n\n//you can get it, it's for free\nconst API_KEY = \"0cf899136a814fb3a74213616240401\";\n\nclass ForecastInfo {\n  constructor(location, current, forecast) {\n    this.location = location;\n    this.current = current;\n    this.forecast = forecast;\n  }\n\n  setLocation(location) {\n    this.location = location;\n  }\n\n  setCurrent(current) {\n    this.current = current;\n  }\n\n  setForecast(forecast) {\n    this.forecast = forecast;\n  }\n}\n\n//Holds the information about the forecast on the current location\nlet forecastInfo = new ForecastInfo();\n\nasync function getUserLocation() {\n  return new Promise((resolve, reject) => {\n    if (\"geolocation\" in navigator) {\n      navigator.geolocation.getCurrentPosition(\n        (position) => {\n          const LATITUDE = position.coords.latitude;\n          const LONGITUDE = position.coords.longitude;\n          resolve(`${LATITUDE},${LONGITUDE}`);\n        },\n        (error) => {\n          if (error.code === error.PERMISSION_DENIED) {\n            console.log(\"User denied the premission to access location.\");\n          } else {\n            console.log(\"Error getting geolocation:\", error.message);\n          }\n          resolve(\"London\");\n        }\n      );\n    } else {\n      console.log(\"Geolocation is not supported by this browser.\");\n      return resolve(\"London\");\n    }\n  });\n}\n\nasync function retrieveForecastInfo(value) {\n  return new Promise((resolve, reject) => {\n    fetch(\n      `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${value}&days=14`,\n      { mode: \"cors\" }\n    )\n      .then((result) => {\n        return result.json();\n      })\n      .then((result) => {\n        resolve(result);\n      })\n      .catch((error) => {\n        reject(error);\n      });\n  });\n}\n\nfunction setLocationData(locationData) {\n  let location = {};\n  location.name = locationData.name;\n  location.country = locationData.country;\n  forecastInfo.setLocation(location);\n}\n\nfunction setCurrentData(currentData, forecastData) {\n  let current = {};\n  current.condition = currentData.condition.text;\n  current.condition_code = currentData.condition.code;\n  current.temp_c = currentData.temp_c;\n  current.feelslike_c = currentData.feelslike_c;\n  current.humidity = currentData.humidity;\n  current.precip_mm = currentData.precip_mm;\n  current.pressure_mb = currentData.pressure_mb;\n  current.uv = currentData.uv;\n  current.wind_kph = currentData.wind_kph;\n  current.sunrise = forecastData.forecastday[0].astro.sunrise;\n  current.sunset = forecastData.forecastday[0].astro.sunset;\n  current.maxtemp_c = forecastData.forecastday[0].day.maxtemp_c;\n  current.mintemp_c = forecastData.forecastday[0].day.mintemp_c;\n  current.hourly = [];\n  forecastData.forecastday[0].hour.forEach((element) => {\n    let hourInfo = {};\n    hourInfo.time = element.time.split(\" \")[1];\n    hourInfo.precip_mm = element.precip_mm;\n    hourInfo.condition = element.condition.text;\n    hourInfo.condition_code = element.condition.code;\n    hourInfo.temp_c = element.temp_c;\n    current.hourly.push(hourInfo);\n    hourInfo = [];\n  });\n  forecastInfo.setCurrent(current);\n}\n\nfunction setDailyData(forecastData) {\n  const WEEK_DAYS = [\n    \"Sunday\",\n    \"Monday\",\n    \"Tuesday\",\n    \"Wednesday\",\n    \"Thursday\",\n    \"Friday\",\n    \"Saturday\",\n  ];\n  let forecast = [];\n  let dayInfo = {};\n  for (let i = 1; i < forecastData.forecastday.length; i++) {\n    dayInfo.date = forecastData.forecastday[i].date;\n    dayInfo.day = WEEK_DAYS[(0,date_fns__WEBPACK_IMPORTED_MODULE_1__.getDay)(dayInfo.date)]; //getDay returns a number from 0 to 6 where 0 is Sunday\n    dayInfo.condition = forecastData.forecastday[i].day.condition.text;\n    dayInfo.condition_code = forecastData.forecastday[i].day.condition.code;\n    dayInfo.totalprecip_mm = forecastData.forecastday[i].day.totalprecip_mm;\n    dayInfo.avghumidity = forecastData.forecastday[i].day.avghumidity;\n    dayInfo.mintemp_c = forecastData.forecastday[i].day.mintemp_c;\n    dayInfo.maxtemp_c = forecastData.forecastday[i].day.maxtemp_c;\n    forecast.push(dayInfo);\n    dayInfo = {};\n  }\n  forecastInfo.setForecast(forecast);\n}\n\nfunction displayInfo(forecastInfo) {\n  console.log(\n    forecastInfo.location,\n    forecastInfo.current,\n    forecastInfo.forecast\n  );\n}\n\nfunction initializeForecastInfo(location) {\n  retrieveForecastInfo(location)\n    .then((data) => {\n      if (!data.error) {\n        setLocationData(data.location);\n        setCurrentData(data.current, data.forecast);\n        setDailyData(data.forecast);\n        displayInfo(forecastInfo);\n      } else {\n        console.log(data.error.message);\n      }\n    })\n    .catch((error) => {\n      console.log(error);\n    });\n}\n\nwindow.onload = () => {\n  getUserLocation().then((result) => {\n    initializeForecastInfo(result); \n  });\n}\n\nlet city = \"Berlin\";\ninitializeForecastInfo(city); \n\n\n//# sourceURL=webpack://weather_app/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var date_fns__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! date-fns */ \"./node_modules/date-fns/getDay.mjs\");\n/* harmony import */ var _renderComponents__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./renderComponents */ \"./src/renderComponents.js\");\n\n\n\n\n//you can get it, it's for free\nconst API_KEY = \"0cf899136a814fb3a74213616240401\";\n\nclass ForecastInfo {\n  constructor(location, current, forecast) {\n    this.location = location;\n    this.current = current;\n    this.forecast = forecast;\n  }\n\n  setLocation(location) {\n    this.location = location;\n  }\n\n  setCurrent(current) {\n    this.current = current;\n  }\n\n  setForecast(forecast) {\n    this.forecast = forecast;\n  }\n}\n\n//Holds the information about the forecast on the current location\nlet forecastInfo = new ForecastInfo();\n\nasync function getUserLocation() {\n  return new Promise((resolve, reject) => {\n    if (\"geolocation\" in navigator) {\n      navigator.geolocation.getCurrentPosition(\n        (position) => {\n          const LATITUDE = position.coords.latitude;\n          const LONGITUDE = position.coords.longitude;\n          resolve(`${LATITUDE},${LONGITUDE}`);\n        },\n        (error) => {\n          if (error.code === error.PERMISSION_DENIED) {\n            console.log(\"User denied the premission to access location.\");\n          } else {\n            console.log(\"Error getting geolocation:\", error.message);\n          }\n          resolve(\"London\");\n        }\n      );\n    } else {\n      console.log(\"Geolocation is not supported by this browser.\");\n      return resolve(\"London\");\n    }\n  });\n}\n\nasync function retrieveForecastInfo(value) {\n  return new Promise((resolve, reject) => {\n    fetch(\n      `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${value}&days=14`,\n      { mode: \"cors\" }\n    )\n      .then((result) => {\n        return result.json();\n      })\n      .then((result) => {\n        resolve(result);\n      })\n      .catch((error) => {\n        reject(error);\n      });\n  });\n}\n\nfunction setLocationData(locationData) {\n  let location = {};\n  location.name = locationData.name;\n  location.country = locationData.country;\n  forecastInfo.setLocation(location);\n}\n\nfunction setCurrentData(currentData, forecastData) {\n  let current = {};\n  current.condition = currentData.condition.text;\n  current.condition_code = currentData.condition.code;\n  current.temp_c = Math.round(currentData.temp_c);\n  current.feelslike_c = Math.round(currentData.feelslike_c);\n  current.humidity = currentData.humidity;\n  current.precip_mm = currentData.precip_mm;\n  current.pressure_mb = currentData.pressure_mb;\n  current.uv = currentData.uv;\n  current.wind_kph = currentData.wind_kph;\n  current.sunrise = forecastData.forecastday[0].astro.sunrise;\n  current.sunset = forecastData.forecastday[0].astro.sunset;\n  current.maxtemp_c = Math.round(forecastData.forecastday[0].day.maxtemp_c);\n  current.mintemp_c = Math.round(forecastData.forecastday[0].day.mintemp_c);\n  current.hourly = [];\n  forecastData.forecastday[0].hour.forEach((element) => {\n    let hourInfo = {};\n    hourInfo.time = element.time.split(\" \")[1];\n    hourInfo.precip_mm = element.precip_mm;\n    hourInfo.condition = element.condition.text;\n    hourInfo.condition_code = element.condition.code;\n    hourInfo.temp_c = element.temp_c;\n    current.hourly.push(hourInfo);\n    hourInfo = [];\n  });\n  forecastInfo.setCurrent(current);\n}\n\nfunction setDailyData(forecastData) {\n  const WEEK_DAYS = [\n    \"Sunday\",\n    \"Monday\",\n    \"Tuesday\",\n    \"Wednesday\",\n    \"Thursday\",\n    \"Friday\",\n    \"Saturday\",\n  ];\n  let forecast = [];\n  let dayInfo = {};\n  for (let i = 1; i < forecastData.forecastday.length; i++) {\n    dayInfo.date = forecastData.forecastday[i].date;\n    dayInfo.day = WEEK_DAYS[(0,date_fns__WEBPACK_IMPORTED_MODULE_2__.getDay)(dayInfo.date)]; //getDay returns a number from 0 to 6 where 0 is Sunday\n    dayInfo.condition = forecastData.forecastday[i].day.condition.text;\n    dayInfo.condition_code = forecastData.forecastday[i].day.condition.code;\n    dayInfo.totalprecip_mm = forecastData.forecastday[i].day.totalprecip_mm;\n    dayInfo.avghumidity = forecastData.forecastday[i].day.avghumidity;\n    dayInfo.mintemp_c = Math.round(forecastData.forecastday[i].day.mintemp_c);\n    dayInfo.maxtemp_c = Math.round(forecastData.forecastday[i].day.maxtemp_c);\n    forecast.push(dayInfo);\n    dayInfo = {};\n  }\n  forecastInfo.setForecast(forecast);\n}\n\nfunction displayInfo(forecastInfo) {\n  console.log(\n    forecastInfo.location,\n    forecastInfo.current,\n    forecastInfo.forecast\n  );\n  (0,_renderComponents__WEBPACK_IMPORTED_MODULE_1__.renderComponents)(forecastInfo)\n}\n\nfunction initializeForecastInfo(location) {\n  retrieveForecastInfo(location)\n    .then((data) => {\n      if (!data.error) {\n        setLocationData(data.location);\n        setCurrentData(data.current, data.forecast);\n        setDailyData(data.forecast);\n        displayInfo(forecastInfo);\n      } else {\n        console.log(data.error.message);\n      }\n    })\n    .catch((error) => {\n      console.log(error);\n    });\n}\n\nwindow.onload = () => {\n  getUserLocation().then((result) => {\n    initializeForecastInfo(result); \n  });\n}\n\n// let city = \"Dubai\";\n// initializeForecastInfo(city); \n\n\n//# sourceURL=webpack://weather_app/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/renderComponents.js":
+/*!*********************************!*\
+  !*** ./src/renderComponents.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   renderComponents: () => (/* binding */ renderComponents),\n/* harmony export */   renderCurrentData: () => (/* binding */ renderCurrentData),\n/* harmony export */   renderDailyData: () => (/* binding */ renderDailyData),\n/* harmony export */   renderHourlyData: () => (/* binding */ renderHourlyData)\n/* harmony export */ });\n/* harmony import */ var _assets_cloudy_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/cloudy.png */ \"./src/assets/cloudy.png\");\n/* harmony import */ var _assets_foggy_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/foggy.png */ \"./src/assets/foggy.png\");\n/* harmony import */ var _assets_partly_cloudy_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/partly-cloudy.png */ \"./src/assets/partly-cloudy.png\");\n/* harmony import */ var _assets_rainy_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/rainy.png */ \"./src/assets/rainy.png\");\n/* harmony import */ var _assets_snowy_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./assets/snowy.png */ \"./src/assets/snowy.png\");\n/* harmony import */ var _assets_sunny_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./assets/sunny.png */ \"./src/assets/sunny.png\");\n/* harmony import */ var _assets_thunderstorm_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./assets/thunderstorm.png */ \"./src/assets/thunderstorm.png\");\n/* harmony import */ var _assets_sunset_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./assets/sunset.png */ \"./src/assets/sunset.png\");\n/* harmony import */ var _assets_sunrise_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./assets/sunrise.png */ \"./src/assets/sunrise.png\");\n/* harmony import */ var _assets_UV_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./assets/UV.png */ \"./src/assets/UV.png\");\n/* harmony import */ var _assets_wind_vane_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./assets/wind-vane.png */ \"./src/assets/wind-vane.png\");\n/* harmony import */ var _assets_humidity_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./assets/humidity.png */ \"./src/assets/humidity.png\");\n/* harmony import */ var _assets_precipitation_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./assets/precipitation.png */ \"./src/assets/precipitation.png\");\n\n\n\n\n\n\n\n \n\n \n\n \n\n\nfunction renderComponents(forecastInfo) {\n  renderCurrentData(forecastInfo);\n  renderHourlyData(forecastInfo);\n  renderDailyData(forecastInfo);\n}\n\nfunction getConditionImage(conditionCode) {\n  if (\n    conditionCode == 1114 ||\n    conditionCode == 1117 ||\n    (conditionCode >= 1204 && conditionCode <= 1225) ||\n    conditionCode == 1237 ||\n    conditionCode == 1279 ||\n    conditionCode == 1282\n  ) {\n    return _assets_snowy_png__WEBPACK_IMPORTED_MODULE_4__;\n  } else if (\n    conditionCode == 1150 ||\n    conditionCode == 1153 ||\n    conditionCode == 1168 ||\n    conditionCode == 1171 ||\n    (conditionCode >= 1180 && conditionCode <= 1201) ||\n    (conditionCode >= 1240 && conditionCode <= 1255) ||\n    (conditionCode >= 1261 && conditionCode <= 1264) ||\n    (conditionCode >= 1273 && conditionCode <= 1276)\n  ) {\n    return _assets_rainy_png__WEBPACK_IMPORTED_MODULE_3__;\n  } else if (\n    conditionCode == 1009 ||\n    conditionCode == 1135 ||\n    conditionCode == 1147\n  ) {\n    return _assets_foggy_png__WEBPACK_IMPORTED_MODULE_1__;\n  } else if (\n    (conditionCode >= 1006 && conditionCode <= 1009) ||\n    (conditionCode >= 1063 && conditionCode <= 1072)\n  ) {\n    return _assets_cloudy_png__WEBPACK_IMPORTED_MODULE_0__;\n  } else if (conditionCode == 1003) {\n    return _assets_partly_cloudy_png__WEBPACK_IMPORTED_MODULE_2__;\n  } else if (conditionCode == 1000) {\n    return _assets_sunny_png__WEBPACK_IMPORTED_MODULE_5__;\n  } else if (conditionCode == 1087) {\n    return _assets_thunderstorm_png__WEBPACK_IMPORTED_MODULE_6__;\n  }\n}\n\nfunction renderCurrentData(forecastInfo) {\n  let conSrc = getConditionImage(forecastInfo.current.condition_code);\n  document.body.innerHTML += `<div class=\"currentWeatherSection\">\n    <div class=\"currentWeatherTicket\">\n        <h3>${forecastInfo.location.name}</h3>\n        <h6>${forecastInfo.current.condition}</h6>\n        </br>\n        <div class=\"conditionImageContainer\">\n            <img src=\"${conSrc}\" alt=\"${forecastInfo.current.condition}\">\n        </div>\n        </br>\n        <h1>${forecastInfo.current.temp_c}&deg;C</h1>\n        <h6>Feels like ${forecastInfo.current.feelslike_c}&deg;C</h6>\n        </br>\n        </br>\n        <div class=\"maxMin\">\n            <div class=\"min\">L: ${forecastInfo.current.mintemp_c}&deg;C</div>\n            <div class=\"max\">H: ${forecastInfo.current.maxtemp_c}&deg;C</div>\n        </div>\n    </div>\n    <div class=\"currentWeatherDetails\">\n        <div>\n          <img src=\"${_assets_humidity_png__WEBPACK_IMPORTED_MODULE_11__}\" alt=\"Humidity\">\n          <p>Humidity: ${forecastInfo.current.humidity}%</p>\n        </div>\n        <div>\n          <img src=\"${_assets_precipitation_png__WEBPACK_IMPORTED_MODULE_12__}\" alt=\"Precipitation\">\n          <p>Precipitation: ${forecastInfo.current.precip_mm} mm</p>\n        </div>\n        <div>\n          <p>Pressure: ${forecastInfo.current.pressure_mb} mb</p>\n        </div>\n        <div>\n          <img src=\"${_assets_UV_png__WEBPACK_IMPORTED_MODULE_9__}\" alt=\"UV\">\n          <p>UV: ${forecastInfo.current.uv}</p>\n        </div>\n        <div>\n          <img src=\"${_assets_wind_vane_png__WEBPACK_IMPORTED_MODULE_10__}\" alt=\"Wind Speed\">\n          <p>Wind speed: ${forecastInfo.current.wind_kph} km/h</p>\n        </div>\n        <div>\n          <img src=\"${_assets_sunrise_png__WEBPACK_IMPORTED_MODULE_8__}\" alt=\"Sunrise\">\n          <p>Sunrise: ${forecastInfo.current.sunrise}</p>\n        </div>\n        <div>\n          <img src=\"${_assets_sunset_png__WEBPACK_IMPORTED_MODULE_7__}\" alt=\"Sunset\">\n          <p>Sunset: ${forecastInfo.current.sunset}</p>\n        </div>\n    </div>\n</div>`;\n}\n\nfunction renderHourlyData(forecastInfo) {\n  \n}\n\nfunction renderDailyData(forecastInfo) {}\n\n\n//# sourceURL=webpack://weather_app/./src/renderComponents.js?");
+
+/***/ }),
+
+/***/ "./src/assets/UV.png":
+/*!***************************!*\
+  !*** ./src/assets/UV.png ***!
+  \***************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"bca196e780566c0c2ce5.png\";\n\n//# sourceURL=webpack://weather_app/./src/assets/UV.png?");
+
+/***/ }),
+
+/***/ "./src/assets/cloudy.png":
+/*!*******************************!*\
+  !*** ./src/assets/cloudy.png ***!
+  \*******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"0b85501947099b739629.png\";\n\n//# sourceURL=webpack://weather_app/./src/assets/cloudy.png?");
+
+/***/ }),
+
+/***/ "./src/assets/foggy.png":
+/*!******************************!*\
+  !*** ./src/assets/foggy.png ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"e1c6eeb66bc8245d1427.png\";\n\n//# sourceURL=webpack://weather_app/./src/assets/foggy.png?");
+
+/***/ }),
+
+/***/ "./src/assets/humidity.png":
+/*!*********************************!*\
+  !*** ./src/assets/humidity.png ***!
+  \*********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"43992d742148ce641e8e.png\";\n\n//# sourceURL=webpack://weather_app/./src/assets/humidity.png?");
+
+/***/ }),
+
+/***/ "./src/assets/partly-cloudy.png":
+/*!**************************************!*\
+  !*** ./src/assets/partly-cloudy.png ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"bf37eef186b2bb5b9984.png\";\n\n//# sourceURL=webpack://weather_app/./src/assets/partly-cloudy.png?");
+
+/***/ }),
+
+/***/ "./src/assets/precipitation.png":
+/*!**************************************!*\
+  !*** ./src/assets/precipitation.png ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"eb6ff707b4d71ae75341.png\";\n\n//# sourceURL=webpack://weather_app/./src/assets/precipitation.png?");
+
+/***/ }),
+
+/***/ "./src/assets/rainy.png":
+/*!******************************!*\
+  !*** ./src/assets/rainy.png ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"451ac0ed43f51af38006.png\";\n\n//# sourceURL=webpack://weather_app/./src/assets/rainy.png?");
+
+/***/ }),
+
+/***/ "./src/assets/snowy.png":
+/*!******************************!*\
+  !*** ./src/assets/snowy.png ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"0e042fd52d87d293569a.png\";\n\n//# sourceURL=webpack://weather_app/./src/assets/snowy.png?");
+
+/***/ }),
+
+/***/ "./src/assets/sunny.png":
+/*!******************************!*\
+  !*** ./src/assets/sunny.png ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"20e7d4a7d2e24dbce16d.png\";\n\n//# sourceURL=webpack://weather_app/./src/assets/sunny.png?");
+
+/***/ }),
+
+/***/ "./src/assets/sunrise.png":
+/*!********************************!*\
+  !*** ./src/assets/sunrise.png ***!
+  \********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"b45acf0adc44e2dfd124.png\";\n\n//# sourceURL=webpack://weather_app/./src/assets/sunrise.png?");
+
+/***/ }),
+
+/***/ "./src/assets/sunset.png":
+/*!*******************************!*\
+  !*** ./src/assets/sunset.png ***!
+  \*******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"5a01bbd7ed097b8f6efa.png\";\n\n//# sourceURL=webpack://weather_app/./src/assets/sunset.png?");
+
+/***/ }),
+
+/***/ "./src/assets/thunderstorm.png":
+/*!*************************************!*\
+  !*** ./src/assets/thunderstorm.png ***!
+  \*************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"ccc3211023da1b0301fa.png\";\n\n//# sourceURL=webpack://weather_app/./src/assets/thunderstorm.png?");
+
+/***/ }),
+
+/***/ "./src/assets/wind-vane.png":
+/*!**********************************!*\
+  !*** ./src/assets/wind-vane.png ***!
+  \**********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"bd05459d6ad7a45c74b7.png\";\n\n//# sourceURL=webpack://weather_app/./src/assets/wind-vane.png?");
 
 /***/ }),
 
@@ -191,6 +331,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -205,6 +357,29 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && !scriptUrl) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */

@@ -1,5 +1,6 @@
 import "./style.css";
 import { getDay } from "date-fns";
+import { renderComponents } from "./renderComponents";
 
 //you can get it, it's for free
 const API_KEY = "0cf899136a814fb3a74213616240401";
@@ -81,8 +82,8 @@ function setCurrentData(currentData, forecastData) {
   let current = {};
   current.condition = currentData.condition.text;
   current.condition_code = currentData.condition.code;
-  current.temp_c = currentData.temp_c;
-  current.feelslike_c = currentData.feelslike_c;
+  current.temp_c = Math.round(currentData.temp_c);
+  current.feelslike_c = Math.round(currentData.feelslike_c);
   current.humidity = currentData.humidity;
   current.precip_mm = currentData.precip_mm;
   current.pressure_mb = currentData.pressure_mb;
@@ -90,8 +91,8 @@ function setCurrentData(currentData, forecastData) {
   current.wind_kph = currentData.wind_kph;
   current.sunrise = forecastData.forecastday[0].astro.sunrise;
   current.sunset = forecastData.forecastday[0].astro.sunset;
-  current.maxtemp_c = forecastData.forecastday[0].day.maxtemp_c;
-  current.mintemp_c = forecastData.forecastday[0].day.mintemp_c;
+  current.maxtemp_c = Math.round(forecastData.forecastday[0].day.maxtemp_c);
+  current.mintemp_c = Math.round(forecastData.forecastday[0].day.mintemp_c);
   current.hourly = [];
   forecastData.forecastday[0].hour.forEach((element) => {
     let hourInfo = {};
@@ -125,8 +126,8 @@ function setDailyData(forecastData) {
     dayInfo.condition_code = forecastData.forecastday[i].day.condition.code;
     dayInfo.totalprecip_mm = forecastData.forecastday[i].day.totalprecip_mm;
     dayInfo.avghumidity = forecastData.forecastday[i].day.avghumidity;
-    dayInfo.mintemp_c = forecastData.forecastday[i].day.mintemp_c;
-    dayInfo.maxtemp_c = forecastData.forecastday[i].day.maxtemp_c;
+    dayInfo.mintemp_c = Math.round(forecastData.forecastday[i].day.mintemp_c);
+    dayInfo.maxtemp_c = Math.round(forecastData.forecastday[i].day.maxtemp_c);
     forecast.push(dayInfo);
     dayInfo = {};
   }
@@ -139,6 +140,7 @@ function displayInfo(forecastInfo) {
     forecastInfo.current,
     forecastInfo.forecast
   );
+  renderComponents(forecastInfo)
 }
 
 function initializeForecastInfo(location) {
@@ -164,5 +166,5 @@ window.onload = () => {
   });
 }
 
-let city = "Berlin";
-initializeForecastInfo(city); 
+// let city = "Dubai";
+// initializeForecastInfo(city); 
